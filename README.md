@@ -9,5 +9,14 @@
   ```
   <partial name='_Notification'>
   ```
+* If the partial view has to be used **in all the pages**, then use it in **_Layout.cshtml**
+```
+<div class="container">
+        <main role="main" class="pb-3">
+           <partial name="_Notification"/> <!--Used just before @RenderBody()-->
+            @RenderBody()
+        </main>
+</div>
+```
   
 
