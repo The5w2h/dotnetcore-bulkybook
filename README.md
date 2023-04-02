@@ -24,6 +24,13 @@
   - Minimizes duplicate logic.
   - Used to have independence from persistence framework, as Repository framework decouples app from persistence framework.
 * Get(id), GetAll(param1, param2, ...., param n), GetFirstOrDefault(param1, ..., param n), Add(obj), Remove(obj)
-  - ⚠️ Update method should be made separately, as update logic is *not common* for all obj. So, it should not be part of the common repository.
+  - ⚠️ **Update** method should be made separately, as update logic is *not common* for all obj. So, it should not be part of the common repository.
+
+* Should NOT have methods like update or save, mimicking a DB.
+* ###### Unit of Work
+  - Has single DB Context class and it coordinates with all the repositories
+  - Has common DB context for all the repositories. ❓ *How is this beneficial?*
+  - Controller ▶️ UNIT OF WORK ▶️ Entity Framework and DB
+  - DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a ❓ single SaveChanges() method.
   
 
