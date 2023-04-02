@@ -20,6 +20,6 @@
 ```
 * #### Repository Pattern
 * Domain Driven Design. Abstraction of data.
-  - **Benefit**: Minimizes duplicate logic
+  - :Exclamation: **Benefit**: Minimizes duplicate logic
   
 
