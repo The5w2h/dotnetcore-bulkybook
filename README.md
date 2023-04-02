@@ -19,5 +19,7 @@
 </div>
 ```
 * #### Repository Pattern
+* Domain Driven Design. Abstraction of data.
+ - **Benefit**: Minimizes duplicate logic
   
 
