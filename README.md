@@ -5,7 +5,7 @@
   * **Do not** have a **page model**
   * Mostly used as **reusable** component in the Razor View
   * :bulb: Put in **Shared** folder
-  * *Naming Convention* start with **_**
+  * *Naming Convention* starts with **_**
   ```
   <partial name='_Notification'>
   ```
