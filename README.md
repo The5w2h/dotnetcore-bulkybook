@@ -20,6 +20,10 @@
 ```
 * #### Repository Pattern
 * Domain Driven Design. Abstraction of data.
-  - :exclamation: **Benefit**: Minimizes duplicate logic
+  **Benefit**: 
+  - Minimizes duplicate logic.
+  - Used to have independence from persistence framework, as Repository framework decouples app from persistence framework.
+* Get(id), GetAll(param1, param2, ...., param n), GetFirstOrDefault(param1, ..., param n), Add(obj), Remove(obj)
+  - :caution: Update method should be made separately, as update logic is *not common* for all obj. So, it should not be part of the common repository.
   
 
