@@ -1,5 +1,9 @@
 # dotnetcore-bulkybook
-
+#### General
+* Services are registered inside Program.cs
+```
+builder.Services.AddSomething<>();
+```
 #### Complete Dotnet Core Project for adding Books or Movies
 * Partial Views:
   * **Do not** have a **page model**
