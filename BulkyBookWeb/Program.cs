@@ -1,4 +1,6 @@
 ﻿using BulkyBook.DataAccess;
+using BulkyBook.DataAccess.Repository;
+using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     ));
 // Razor page runtime compilation
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
+// *IMP* Here the service is registered.
+// Lifetime has to be specific: 3 lifetimes in dotnet are viz.
+// 1. Singleton (1 obj throughout the lifecyle, unless app is restarted),
+// 2. ** Scoped: Scoped until the next click event happens.[When working with DBContext use Scoped]
+// 3. Transient: Everytime a new object is created.
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
