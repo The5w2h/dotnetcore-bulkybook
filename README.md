@@ -10,11 +10,11 @@ builder.Services.AddSomething<>();
   * Mostly used as **reusable** component in the Razor View
   * :bulb: Put in **Shared** folder
   * *Naming Convention* starts with **_**
-  ```
+  ```cSharp
   <partial name='_Notification'>
   ```
 * If the partial view has to be used **in all the pages**, then use it in **_Layout.cshtml**
-```
+```cSharp
 <div class="container">
         <main role="main" class="pb-3">
            <partial name="_Notification"/> <!--Used just before @RenderBody()-->
