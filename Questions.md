@@ -3,7 +3,7 @@
   - [Explanation](https://stackoverflow.com/questions/2151959/using-interface-variables)
   - You are not creating an instance of the interface - **you are creating an *instance of something that implements the interface*.**
 * What is the meaning of -
-```
+```cSharp
 using System;
 using System.Linq.Expressions;
 
