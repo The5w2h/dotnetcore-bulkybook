@@ -31,7 +31,7 @@ builder.Services.AddSomething<>();
   - ⚠️ **Update** method should be made separately, as update logic is *not common* for all obj. So, it should not be part of the common repository.
 
 * Should NOT have methods like update or save, mimicking a DB.
-* ###### Unit of Work
+* #### Unit of Work
   - Has single DB Context class and it coordinates with all the repositories
   - Has common DB context for all the repositories. ❓ *How is this beneficial?*
   - Controller ▶️ UNIT OF WORK ▶️ Entity Framework and DB
