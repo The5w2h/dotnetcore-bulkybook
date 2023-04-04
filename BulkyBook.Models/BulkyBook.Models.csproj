@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BulkyBook.Utility\BulkyBook.Utility.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="7.0.5" />
+  </ItemGroup>
 </Project>
