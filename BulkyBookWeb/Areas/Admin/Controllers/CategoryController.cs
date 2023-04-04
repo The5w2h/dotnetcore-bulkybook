@@ -12,6 +12,7 @@ using BulkyBook.DataAccess.Repository.IRepository;
 
 namespace BulkyBookWeb.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         //private readonly ICategoryRepository _db;
