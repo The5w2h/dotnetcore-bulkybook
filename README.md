@@ -37,7 +37,7 @@ builder.Services.AddSomething<>();
   - Controller ▶️ UNIT OF WORK ▶️ Entity Framework and DB
   - DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a ❓ single SaveChanges() method.
 
-## 💡: Steps for adding a new Model in DOTNET CORE:
+## 💡Steps for adding a new Model in DOTNET CORE:
 * Add a new model class add the prop with DataAnnotations
 * Migrate using NuGet Package Console
 	```powerShell
@@ -50,7 +50,7 @@ builder.Services.AddSomething<>();
 	*   Update IUnitOfWork for new XRepository
 	*   Update UnitOfWork for new XRepository
  
- #### ⭐ Areas
+ #### ⭐Areas
  * To segregate the Views and Controllers into different section e.g. Admin and Non-Admin, use Areas. Areas have their own MVC i.e., Models, Views and Controllers
  * Areas is a folder structure that has Areas with separate subfolders for *Controllers, Data, Models and Views*. So, if scaffolding is not possible, then create this folder structure.
  * *_Layout, _ViewImports, _ViewStart* **should be present in each of the Views folders**
