@@ -56,7 +56,7 @@ builder.Services.AddSomething<>();
  * *_Layout, _ViewImports, _ViewStart* **should be present in each of the Views folders**
 
 ```cSharp
-// Inside _Layouts, asp-area shows in which subfolder controller and action be looked at
+// Inside _Layouts, asp-area shows in which subfolder, controller and action be looked at
 <li class="nav-item">
      <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
 </li>
