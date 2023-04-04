@@ -63,6 +63,7 @@ builder.Services.AddSomething<>();
 </li>
 ```
 ```cSharp
+// In Program.cs
 app.MapControllerRoute(
     name: "default",
     //area is included here
