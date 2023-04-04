@@ -38,8 +38,8 @@ builder.Services.AddSomething<>();
   - DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a ❓ single SaveChanges() method.
 
 ## 💡: Steps for adding a new Model in DOTNET CORE:
-	1.	Add a new model class
-	⁃	add the prop with DataAnnotations
+* Add a new model class
+* 		add the prop with DataAnnotations
 	2.	Migrate using NuGet Package Console
 	⁃	add-migration AddModelToDb
 	⁃	update-database
