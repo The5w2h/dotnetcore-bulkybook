@@ -55,5 +55,12 @@ builder.Services.AddSomething<>();
  * Areas is a folder structure that has Areas with separate subfolders for *Controllers, Data, Models and Views*. So, if scaffolding is not possible, then create this folder structure.
  * *_Layout, _ViewImports, _ViewStart* **should be present in each of the Views folders**
 
+```cSharp
+// Inside _Layouts, asp-area shows in which subfolder controller and action be looked at
+<li class="nav-item">
+     <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+</li>
+```
+
   
 
