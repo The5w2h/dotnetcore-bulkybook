@@ -11,15 +11,21 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
-// Razor page runtime compilation
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 // *IMP* Here the service is registered.
+// When working with DBs, add "Scoped" lifecycle
 // Lifetime has to be specific: 3 lifetimes in dotnet are viz.
 // 1. Singleton (1 obj throughout the lifecyle, unless app is restarted),
 // 2. ** Scoped: Scoped until the next click event happens.[When working with DBContext use Scoped]
 // 3. Transient: Everytime a new object is created.
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+// Removed above code as UNITOFWORK will take care of this.
+// ? We are adding DI to Program.cs for new services using builder.Services.AddScoped<IT, T>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Razor page runtime compilation
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
