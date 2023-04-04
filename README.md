@@ -33,9 +33,9 @@ builder.Services.AddSomething<>();
 * Should NOT have methods like update or save, mimicking a DB.
 * #### Unit of Work
   - Has single DB Context class and it coordinates with all the repositories
-  - Has common DB context for all the repositories. :hand: *How is this beneficial?*
+  - Has common DB context for all the repositories. 🚏 *How is this beneficial?*
   - Controller ▶️ UNIT OF WORK ▶️ Entity Framework and DB
-  - DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a ❓ single SaveChanges() method.
+  - 🚏 DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a single SaveChanges() method.
 
 ## 💡Steps for adding a new Model in DOTNET CORE:
 * Add a new model class add the prop with DataAnnotations
