@@ -22,7 +22,7 @@ builder.Services.AddSomething<>();
         </main>
 </div>
 ```
-* #### Repository Pattern
+### Repository Pattern
 * Domain Driven Design. Abstraction of data.
   **Benefit**: 
   - Minimizes duplicate logic.
