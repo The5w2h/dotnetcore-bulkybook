@@ -45,10 +45,10 @@ builder.Services.AddSomething<>();
 	update-database
 	```
 * Update the repositories
-*   Update IXRepository
-*   Update XRepository
-*   Update IUnitOfWork for new XRepository
-*   Update UnitOfWork for new XRepository
+	*   Update IXRepository
+	*   Update XRepository
+	*   Update IUnitOfWork for new XRepository
+	*   Update UnitOfWork for new XRepository
  
  #### Areas
  * To segregate the Views and Controllers into different section e.g. Admin and Non-Admin, use Areas. Areas have their own MVC i.e., Models, Views and Controllers
