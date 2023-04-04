@@ -54,6 +54,7 @@ builder.Services.AddSomething<>();
  * To segregate the Views and Controllers into different section e.g. Admin and Non-Admin, use Areas. Areas have their own MVC i.e., Models, Views and Controllers
  * Areas is a folder structure that has Areas with separate subfolders for *Controllers, Data, Models and Views*. So, if scaffolding is not possible, then create this folder structure.
  * *_Layout, _ViewImports, _ViewStart* **should be present in each of the Views folders**
+ * Below code changes are important. 1) TagHelper asp-area
 
 ```cSharp
 // Inside _Layouts, asp-area shows in which subfolder, controller and action be looked at
