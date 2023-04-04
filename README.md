@@ -61,6 +61,12 @@ builder.Services.AddSomething<>();
      <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
 </li>
 ```
+```cSharp
+app.MapControllerRoute(
+    name: "default",
+    //area is included here
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+```
 
   
 
