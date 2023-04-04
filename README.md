@@ -40,7 +40,7 @@ builder.Services.AddSomething<>();
 ## 💡: Steps for adding a new Model in DOTNET CORE:
 * Add a new model class add the prop with DataAnnotations
 * Migrate using NuGet Package Console
-	```bash
+	```powerShell
 	add-migration AddModelToDb
 	update-database
 	```
