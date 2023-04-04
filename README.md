@@ -38,16 +38,17 @@ builder.Services.AddSomething<>();
   - DBSet1 ... DBSetn, SaveChanges(). So, for multiple transactions are handled by a ❓ single SaveChanges() method.
 
 ## 💡: Steps for adding a new Model in DOTNET CORE:
-* Add a new model class
-* 		add the prop with DataAnnotations
-	2.	Migrate using NuGet Package Console
-	⁃	add-migration AddModelToDb
-	⁃	update-database
-	3.	Update the repositories
-	⁃	Update IXRepository
-	⁃	Update XRepository
-	⁃	Update IUnitOfWork for new XRepository
-	⁃	Update UnitOfWork for new XRepository
+* Add a new model class add the prop with DataAnnotations
+* Migrate using NuGet Package Console
+	```
+	add-migration AddModelToDb
+	update-database
+	```
+* Update the repositories
+* 		Update IXRepository
+* 		Update XRepository
+* 		Update IUnitOfWork for new XRepository
+* 		Update UnitOfWork for new XRepository
  
  #### Areas
 	* To segregate the Views and Controllers into different section e.g. Admin and Non-Admin, use Areas. Areas have their own MVC i.e., Models, Views and Controllers
